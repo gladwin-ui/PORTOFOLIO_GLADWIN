@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portofolio Darvesh Gladwin Musyaffa — Mahasiswa S1 Sistem Informasi, Telkom University. Lihat proyek dan hubungi saya.">
+
+    <!-- ===== SEO & Meta ===== -->
+    <title>Darvesh Gladwin Musyaffa — Portofolio</title>
+
+    <!-- ===== Google Fonts: Inter ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== Stylesheet ===== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         NAVBAR — Transparan dengan backdrop-blur
+    ========================================= -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar__container">
+            <a href="#hero" class="navbar__logo">Portofolio<span class="accent-dot">.</span></a>
+            <ul class="navbar__links">
+                <li><a href="#hero" class="navbar__link">Home</a></li>
+                <li><a href="#portfolio" class="navbar__link">Projects</a></li>
+                <li><a href="#experience" class="navbar__link">Experience</a></li>
+                <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
+            <!-- Hamburger menu for mobile -->
+            <button id="navbar-toggle" class="navbar__toggle" aria-label="Toggle navigation">
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO SECTION — Nama besar & CTA
+    ========================================= -->
+    <section id="hero" class="hero">
+        <!-- Animated ambient orbs background -->
+        <div class="hero__orbs" aria-hidden="true">
+            <div class="hero__orb hero__orb--1"></div>
+            <div class="hero__orb hero__orb--2"></div>
+            <div class="hero__orb hero__orb--3"></div>
+        </div>
+
+        <div class="hero__content fade-in">
+            <!-- Foto Profil -->
+            <div class="hero__photo-wrapper">
+                <img src="profile.jpg" alt="Darvesh Gladwin Musyaffa" class="hero__photo">
+            </div>
+
+            <p class="hero__greeting">Hello, I'm</p>
+            <h1 class="hero__name">Darvesh Gladwin Musyaffa</h1>
+            <p class="hero__subtitle">Mahasiswa S1 Sistem Informasi — <span class="hero__uni">Telkom University</span>
+            </p>
+
+            <!-- Deskripsi singkat -->
+            <p class="hero__bio">6th-semester Information Systems undergraduate at Telkom University focused on Data
+                Analytics and Data Science. Experienced in organizational leadership and national tech competitions,
+                striving to create impactful, data-driven solutions.</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PORTFOLIO SECTION — Grid 6 kartu proyek
+    ========================================= -->
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio__container">
+            <h2 class="section-heading fade-in">
+                <span class="section-heading__label">Projects</span>
+                Featured Work
+            </h2>
+
+            <div class="portfolio__grid">
+                <!-- Kartu 1 -->
+                <article class="project-card fade-in" id="project-card-1" data-title="Data Visualisation"
+                    data-image="project-1.png" data-tags="MySQL,Pentaho,Looker Studio"
+                    data-url="https://datastudio.google.com/reporting/34d9be70-f57e-4bf4-b05d-8501eb67e329"
+                    data-desc="Business Intelligence & Data Analytics project analyzing Airbnb data using ETL pipelines, machine learning, and interactive Looker Studio dashboards."
+                    data-detail="This project transformed unstructured Airbnb transaction data into a robust decision-support system for optimizing rental prices, segmenting markets, and predicting property occupancy. We built a Star Schema Data Warehouse in MySQL, powered by an automated Pentaho ETL pipeline to aggressively clean and integrate the data. Leveraging this reliable foundation, we deployed Python-based machine learning models—including K-Means clustering, Random Forest regression, and Decision Tree classification—to extract deep predictive insights from the market.&#10;&#10;My primary responsibility was spearheading the Business Intelligence and Data Visualization layer to make these technical findings actionable. I designed an interactive Google Looker Studio dashboard structured around the Balanced Scorecard framework to monitor key Financial, Operational, and Customer KPIs. By translating complex analytics into intuitive visual assets like geospatial heatmaps and price-to-review scatter plots, I empowered stakeholders to easily identify geographic revenue trends and pricing &quot;sweet spots,&quot; replacing manual guesswork with data-driven strategies.">
+                    <div class="project-card__image-wrapper">
+                        <img src="project-1.png" alt="Project 1 — Data Visualisation" class="project-card__image"
+                            loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Data Visualisation</h3>
+                        <p class="project-card__description">Business Intelligence & Data Analytics project analyzing
+                            Airbnb data using ETL pipelines, machine learning, and interactive Looker Studio dashboards.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Pentaho</span>
+                            <span class="tag">Looker Studio</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 2 -->
+                <article class="project-card fade-in" id="project-card-2" data-title="EcoSmart.AI"
+                    data-image="project-2.jpeg, project-2-slide2.png, project-2-slide3.png"
+                    data-tags="ESP32,Computer Vision,WebDev"
+                    data-url="https://github.com/gladwin-ui/EcoSmart.AI-Hackathon"
+                    data-desc="EcoSmart.AI is an IoT waste management system that earned Runner Up (2nd Place) at Hackathon EISD 2025. It leverages deep learning for automated waste sorting and gamification to incentivize sustainable disposal habits."
+                    data-detail="The technical core of EcoSmart.AI features a custom Deep Learning model based on a Convolutional Neural Network (CNN) architecture, developed using TensorFlow 2.x and Keras. This model is specifically trained to classify waste into &quot;Paper/Tissue&quot; and &quot;Inorganic&quot; categories in real-time by processing 224x224 pixel image inputs. To ensure high precision in the automated physical sorting process, the system implements a strict confidence threshold of 0.73; any predictions falling below this score are automatically routed to the inorganic category as a fallback measure to maintain sorting integrity.&#10;&#10;The Machine Learning module is seamlessly integrated into a Flask-based backend that orchestrates the end-to-end interaction between hardware and software. When a user authenticates via an RFID sensor, the system triggers OpenCV to capture frames from a camera feed and runs model inference with a latency of 200–500ms to drive physical sorting through ESP32-controlled servo motors. Beyond image classification, the project leverages the OpenAI API to provide an intelligent educational chatbot for administrators, while the gamification system automatically updates user reward points based on AI-verified disposal activities, creating a smart and hygienic waste management ecosystem.">
+                    <div class="project-card__image-wrapper">
+                        <img src="project-2.jpeg  " alt="Project 2 — EcoSmart.AI" class="project-card__image"
+                            loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">EcoSmart.AI</h3>
+                        <p class="project-card__description">EcoSmart.AI is an IoT waste management system that earned
+                            Runner Up (2nd Place) at Hackathon EISD 2025. It leverages deep learning for automated waste
+                            sorting and gamification to incentivize sustainable disposal habits.</p>
+                        <div class="project-card__tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">WebDev</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 3 -->
+                <article class="project-card fade-in" id="project-card-3" data-title="Student Stress Predictor"
+                    data-image="project-3.png, project-3-slide2.png, project-3-slide3.png"
+                    data-tags="Streamlit,Machine Learning,Python"
+                    data-url="https://drive.google.com/drive/folders/1xie9DG-w1tRhxVtSomvzRQkOZ-HHWMNW"
+                    data-desc="An interactive machine learning dashboard that predicts student stress levels and categorizes lifestyle patterns using Logistic Regression and K-Means clustering to provide data-driven insights into student well-being."
+                    data-detail="This project integrates supervised and unsupervised machine learning techniques to analyze how various lifestyle factors—such as study hours, sleep duration, and social activities—impact student stress levels. I implemented a Logistic Regression algorithm for multi-class classification, which achieved a high accuracy of 0.84 and a ROC AUC score of 0.94, ensuring reliable predictions across low, moderate, and high stress categories. Additionally, the project utilizes K-Means Clustering to automatically segment student profiles, identifying distinct behavioral groups such as the &quot;Balanced and Healthy&quot; type versus the &quot;Ambitious but Stressed&quot; type based on their daily activity patterns.&#10;&#10;To translate these analytical findings into a practical tool, I developed an interactive dashboard using Streamlit that enables real-time individual stress predictions and lifestyle segmentation. The application features comprehensive performance visualizations, ranging from confusion matrices and ROC curves for technical evaluation to feature correlation heatmaps that highlight dominant stress triggers. By combining robust data preprocessing with an intuitive user interface, this project demonstrates the effective application of predictive analytics in supporting mental health and academic well-being.">
+                    <div class="project-card__image-wrapper">
+                        <img src="project-3.png" alt="Project 3 — Student Stress Predictor" class="project-card__image"
+                            loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Student Stress Predictor</h3>
+                        <p class="project-card__description">An interactive machine learning dashboard that predicts
+                            student stress levels and categorizes lifestyle patterns using Logistic Regression and
+                            K-Means clustering to provide data-driven insights into student well-being.</p>
+                        <div class="project-card__tags">
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 4 -->
+                <article class="project-card fade-in" id="project-card-4" data-title="Course Management System"
+                    data-image="project-4.png" data-tags="Python, FastAPI, MySQL, Docker"
+                    data-url="https://github.com/gladwin-ui/UTS_IAE.git"
+                    data-desc="A scalable Course Management System built on a microservices architecture, featuring a centralized API Gateway and specialized services for user management, course enrollments, and real-time academic progress tracking."
+                    data-detail="This project is a comprehensive e-learning platform designed using a Microservices Architecture to ensure high modularity and independent scalability of system components. The backend is orchestrated through a central API Gateway that serves as the entry point, routing requests to five dedicated services: User, Course, Enrollment, Progress, and Review services[cite: 1, 4]. This design allows each service—such as the progress tracker or the enrollment manager—to handle specific business logic independently, improving the overall fault tolerance and maintainability of the application.&#10;&#10;Technically, the system is powered by Python (Flask) for the backend services and MySQL for relational data persistence, managed through custom database initialization and migration scripts. The frontend provides an interactive user interface built with HTML, CSS, and vanilla JavaScript, which communicates with the microservices via RESTful APIs. To ensure system reliability, I implemented a robust testing suite including connection tests and service-level validation scripts, ensuring seamless integration between the independent backend components and the frontend dashboard.">
+                    <div class="project-card__image-wrapper">
+                        <img src="project-4.png" alt="Project 4 — Course Management System" class="project-card__image"
+                            loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Course Management System</h3>
+                        <p class="project-card__description">A scalable Course Management System built on a
+                            microservices architecture, featuring a centralized API Gateway and specialized services for
+                            user management, course enrollments, and real-time academic progress tracking.</p>
+                        <div class="project-card__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 5 -->
+                <article class="project-card fade-in" id="project-card-5" data-title="Stroke Risk Prediction"
+                    data-image="project-5.png" data-tags="Python,SQL,Jupyter"
+                    data-url="https://github.com/gladwin-ui/FINALPROJECTEDM.git"
+                    data-desc="A comprehensive Enterprise Data Management (EDM) project focused on architecting scalable data infrastructures and implementing governance frameworks to ensure data integrity and organizational efficiency"
+                    data-detail="This project centers on the strategic design and implementation of an Enterprise Data Management framework, aimed at consolidating fragmented organizational data into a high-performance architecture. It involves creating a unified data ecosystem that integrates multiple sources into a centralized repository, emphasizing data consistency and structural integrity. By employing advanced relational modeling and schema design, the project establishes a robust foundation for data governance, enabling seamless information retrieval and cross-departmental data alignment.&#10;&#10;The technical development was carried out in a Jupyter Notebook environment, utilizing Python for automated data processing and SQL for database orchestration. The implementation covers the complete data management lifecycle, including data profiling, cleaning, and the optimization of storage schemas to support intensive analytical workloads. By prioritizing data quality and query efficiency, the system provides a reliable &quot;single source of truth&quot; that supports complex reporting and strategic business intelligence, showcasing a professional approach to managing large-scale enterprise data assets.">
+                    <div class="project-card__image-wrapper">
+                        <img src="project-5.png" alt="Project 5 — Stroke Risk Prediction" class="project-card__image"
+                            loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Stroke Risk Prediction</h3>
+                        <p class="project-card__description">A comprehensive Enterprise Data Management (EDM) project
+                            focused on architecting scalable data infrastructures and implementing governance frameworks
+                            to ensure data integrity and organizational efficiency.</p>
+                        <div class="project-card__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Jupyter</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kartu 6 -->
+                <article class="project-card fade-in" id="project-card-6" data-title="SIGAPBDG"
+                    data-image="project-6.png, project-6-slide2.png, project-6-slide3.png"
+                    data-tags="Laravel,MySQL,Vite" data-url="https://github.com/SIGAPBDG-SI4708/ProjectSIGAPBDG"
+                    data-desc="A comprehensive citizen reporting and monitoring platform for Bandung city that streamlines infrastructure and crime incident management through AI-driven analysis and integrated budget tracking."
+                    data-detail="This project is a robust public service information system developed using the Laravel framework, specifically tailored to address urban reporting needs in Bandung. It enables citizens to report critical infrastructure damage and criminal incidents through a centralized, secure platform. The system features advanced reporting logic, including automated report tracking and regional data categorization, which ensures that each complaint is mapped correctly and directed to the appropriate authorities for resolution.&#10;&#10;Beyond standard reporting, SIGAPBDG integrates a specialized AI Analysis service to prioritize urgent reports and simulate impact scenarios. The application also facilitates governance transparency through a dedicated module for budget submissions and funding requests related to infrastructure repairs. Architected with a multi-role dashboard for administrators and citizens, the platform utilizes MySQL for complex data persistence and Vite for optimized frontend performance. By combining geospatial reporting with financial management tools, the platform provides a holistic solution for enhancing urban safety and governmental response efficiency.">
+                    <div class="project-card__image-wrapper">
+                        <img src="project-6.png" alt="Project 6 — SIGAPBDG" class="project-card__image" loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">SIGAPBDG</h3>
+                        <p class="project-card__description">A comprehensive citizen reporting and monitoring platform
+                            for Bandung city that streamlines infrastructure and crime incident management through
+                            AI-driven analysis and integrated budget tracking.</p>
+                        <div class="project-card__tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Vite</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         EXPERIENCE SECTION — Pengalaman kerja
+    ========================================= -->
+    <section id="experience" class="experience">
+        <div class="experience__container">
+            <h2 class="section-heading fade-in">
+                <span class="section-heading__label">Experience</span>
+                Work History
+            </h2>
+
+            <div class="experience__grid">
+                <!-- Experience 1 -->
+                <article class="experience-card fade-in" id="experience-1">
+                    <div class="experience-card__image-wrapper">
+                        <img src="exp-1.jpeg" alt="Data Analyst Intern" class="experience-card__image" loading="lazy">
+                    </div>
+                    <div class="experience-card__body">
+                        <div class="experience-card__header">
+                            <h3 class="experience-card__title">Kontes Robot Terbang Indonesia 2024</h3>
+                            <span class="experience-card__period">September 2024</span>
+                        </div>
+                        <p class="experience-card__company">APTRG Laboratory — Telkom University</p>
+                        <p class="experience-card__description">As the Team Manager for Raven APTRG during the KRTI 2024
+                            competition, I was responsible for the strategic planning and operational execution of our
+                            VTOL drone project. My role involved bridging the gap between technical requirements and
+                            project milestones, ensuring that every subsystem—from propulsion to autonomous
+                            navigation—aligned with the competition's rigorous standards. I focused on fostering a
+                            collaborative environment, managing technical risks, and maintaining high performance under
+                            the high-pressure environment of a national-level robotics competition.</p>
+                        <div class="experience-card__tags">
+                            <span class="tag">Managerial</span>
+                            <span class="tag">Communication</span>
+                            <span class="tag">Teamwork</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Experience 2 -->
+                <article class="experience-card fade-in" id="experience-2">
+                    <div class="experience-card__image-wrapper">
+                        <img src="exp-2.jpeg" alt="Kontes Robot Terbang Indonesia 2025"
+                            class="experience-card__image experience-card__image--cover" loading="lazy">
+                    </div>
+                    <div class="experience-card__body">
+                        <div class="experience-card__header">
+                            <h3 class="experience-card__title">Kontes Robot Terbang Indonesia 2025</h3>
+                            <span class="experience-card__period">October 2025</span>
+                        </div>
+                        <p class="experience-card__company">APTRG Laboratory — Telkom University</p>
+                        <p class="experience-card__description">In 2025, I had the privilege of managing Team Bangau in
+                            the Fixed Wing category for KRTI. Managing a Fixed Wing project requires a deep
+                            understanding of flight dynamics and systems integration. My role was to synchronize the
+                            efforts of the design and programming sub-teams to ensure our UAV could execute autonomous
+                            missions with maximum reliability. Beyond the technical aspects, I focused on building a
+                            resilient team culture that could handle the high-pressure environment of national
+                            competitions, ultimately resulting in our team qualifying as national finalists.</p>
+                        <div class="experience-card__tags">
+                            <span class="tag">Managerial</span>
+                            <span class="tag">Communication</span>
+                            <span class="tag">Teamwork</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Experience 3 -->
+                <article class="experience-card fade-in" id="experience-3">
+                    <div class="experience-card__image-wrapper">
+                        <img src="exp-3.jpeg" alt="Coordinator Non-Technical Division"
+                            class="experience-card__image experience-card__image--cover" loading="lazy">
+                    </div>
+                    <div class="experience-card__body">
+                        <div class="experience-card__header">
+                            <h3 class="experience-card__title">Coordinator Non-Technical Division</h3>
+                            <span class="experience-card__period">January 2026 - Present</span>
+                        </div>
+                        <p class="experience-card__company">APTRG Laboratory — Telkom University</p>
+                        <p class="experience-card__description">Serving as the Non-Technical Division Coordinator, I
+                            strategically led the administrative and public relations pillars, overseeing a
+                            multidisciplinary team to manage the laboratory’s brand and digital presence. I directed
+                            end-to-end administrative workflows and certification processes with high precision, while
+                            optimizing resource management to support the laboratory's technical research and
+                            competition objectives.</p>
+                        <div class="experience-card__tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Project Management</span>
+                            <span class="tag">Communication</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Experience 4 -->
+                <article class="experience-card fade-in" id="experience-4">
+                    <div class="experience-card__image-wrapper">
+                        <img src="exp-4.jpeg" alt="Secretary APTRG Laboratory"
+                            class="experience-card__image experience-card__image--cover" loading="lazy">
+                    </div>
+                    <div class="experience-card__body">
+                        <div class="experience-card__header">
+                            <h3 class="experience-card__title">Secretary APTRG Laboratory</h3>
+                            <span class="experience-card__period">January 2025 - December 2025</span>
+                        </div>
+                        <p class="experience-card__company">APTRG Laboratory — Telkom University</p>
+                        <p class="experience-card__description">As the Secretary of APTRG Laboratory, I authored
+                            research and funding proposals while managing formal correspondence between laboratory
+                            members and university administration. I maintained high standards for technical and
+                            administrative writing, ensuring 100% institutional compliance and streamlining project
+                            approval processes to support laboratory operations.</p>
+                        <div class="experience-card__tags">
+                            <span class="tag">Administrative Management</span>
+                            <span class="tag">Technical Document Drafting</span>
+                            <span class="tag">Professional Correspondence</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Experience 5 -->
+                <article class="experience-card fade-in" id="experience-5">
+                    <div class="experience-card__image-wrapper">
+                        <img src="exp-5.jpeg" alt="Staff of Competition and Event Division"
+                            class="experience-card__image" loading="lazy">
+                    </div>
+                    <div class="experience-card__body">
+                        <div class="experience-card__header">
+                            <h3 class="experience-card__title">Staff of Competition and Event Division</h3>
+                            <span class="experience-card__period">December 2025 - Present</span>
+                        </div>
+                        <p class="experience-card__company">Enterprise Data Management Laboratory — Telkom University
+                        </p>
+                        <p class="experience-card__description">Orchestrated departmental events and designed data
+                            competitions while managing participation tracking at Telkom University’s EDM Laboratory. I
+                            balanced organizational leadership with technical responsibilities, conducting data-driven
+                            research and implementing machine learning and data analysis tasks to support the
+                            laboratory's research-focused environment.</p>
+                        <div class="experience-card__tags">
+                            <span class="tag">Collaboration</span>
+                            <span class="tag">Organization</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT SECTION — Minimalis & mudah ditemukan
+    ========================================= -->
+    <section id="contact" class="contact">
+        <div class="contact__container fade-in">
+            <h2 class="section-heading">
+                <span class="section-heading__label">Contact</span>
+                Let's Connect
+            </h2>
+            <p class="contact__intro">Tertarik untuk bekerja sama atau ingin berdiskusi? Jangan ragu untuk menghubungi
+                saya melalui salah satu kanal berikut.</p>
+
+            <div class="contact__cards">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6281385620813" target="_blank" rel="noopener noreferrer" class="contact-card"
+                    id="contact-whatsapp">
+                    <div class="contact-card__icon-wrapper contact-card__icon-wrapper--wa">
+                        <!-- WhatsApp SVG Icon -->
+                        <svg class="contact-card__icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </div>
+                    <div class="contact-card__info">
+                        <span class="contact-card__label">WhatsApp</span>
+                        <span class="contact-card__value">081385620813</span>
+                    </div>
+                    <svg class="contact-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+
+                <!-- Gmail -->
+                <a href="mailto:gladwinmus@gmail.com" class="contact-card" id="contact-gmail">
+                    <div class="contact-card__icon-wrapper contact-card__icon-wrapper--gmail">
+                        <!-- Email SVG Icon -->
+                        <svg class="contact-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="3" ry="3"></rect>
+                            <polyline points="22,4 12,13 2,4"></polyline>
+                        </svg>
+                    </div>
+                    <div class="contact-card__info">
+                        <span class="contact-card__label">Gmail</span>
+                        <span class="contact-card__value">gladwinmus@gmail.com</span>
+                    </div>
+                    <svg class="contact-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/darvesh-gladwin-musyaffa/" target="_blank"
+                    rel="noopener noreferrer" class="contact-card" id="contact-linkedin">
+                    <div class="contact-card__icon-wrapper contact-card__icon-wrapper--linkedin">
+                        <!-- LinkedIn SVG Icon -->
+                        <svg class="contact-card__icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </div>
+                    <div class="contact-card__info">
+                        <span class="contact-card__label">LinkedIn</span>
+                        <span class="contact-card__value">Darvesh Gladwin Musyaffa</span>
+                    </div>
+                    <svg class="contact-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PROJECT DETAIL OVERLAY — Tampilan fokus proyek
+    ========================================= -->
+    <div id="project-detail" class="project-detail" aria-hidden="true">
+        <div class="project-detail__backdrop"></div>
+        <div class="project-detail__content">
+            <button class="project-detail__close" id="project-detail-close" aria-label="Close project detail">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="project-detail__image-wrapper">
+                <button class="project-detail__slider-btn project-detail__slider-btn--prev" id="slider-prev"
+                    aria-label="Previous Image" style="display: none;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <img id="project-detail-image" src="" alt="" class="project-detail__image">
+                <button class="project-detail__slider-btn project-detail__slider-btn--next" id="slider-next"
+                    aria-label="Next Image" style="display: none;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+                <div class="project-detail__slider-dots" id="slider-dots"></div>
+            </div>
+            <div class="project-detail__body">
+                <div class="project-detail__title-row">
+                    <h2 id="project-detail-title" class="project-detail__title"></h2>
+                    <a id="project-detail-link" href="#" target="_blank" rel="noopener noreferrer"
+                        class="project-detail__link" aria-label="View project">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        View Project
+                    </a>
+                </div>
+                <div id="project-detail-tags" class="project-detail__tags"></div>
+                <p id="project-detail-desc" class="project-detail__desc"></p>
+                <div id="project-detail-text" class="project-detail__text"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="footer">
+        <p>&copy; 2026 Darvesh Gladwin Musyaffa. All rights reserved.</p>
+    </footer>
+
+    <!-- ===== JavaScript ===== -->
+    <script src="script.js"></script>
+</body>
+
+</html>
